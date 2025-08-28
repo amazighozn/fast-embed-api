@@ -20,33 +20,14 @@
     cd fast-embed-api
     ```
 
-2.  **Install dependencies:**
-    It is recommended to use a virtual environment.
-    ```bash
-    python -m venv .venv
-    source .venv/bin/activate
-    pip install -r requirements.txt 
-    ```
-    *(Note: You will need to create a `requirements.txt` file from `pyproject.toml` dependencies)*
+2.  **Install dependencies using `uv`:**
+    `uv` is a fast, next-generation Python package manager.
 
-    Or using `uv`:
+ 
     ```bash
-    uv pip install -r requirements.txt
+  uv init
     ```
 
-    The dependencies are:
-    ```
-    fastapi>=0.116.1
-    numpy>=2.3.2
-    pandas>=2.3.2
-    pydantic>=2.11.7
-    python-multipart>=0.0.20
-    requests>=2.32.5
-    sentence-transformers>=5.1.0
-    torch>=2.8.0
-    transformers>=4.55.4
-    uvicorn[standard]>=0.35.0
-    ```
 
 ## Usage
 
